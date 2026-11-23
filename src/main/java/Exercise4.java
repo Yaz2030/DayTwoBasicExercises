@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Exercise4 {
 
     /*4.
@@ -9,4 +11,18 @@ reversed string.
 ,olleH"  */
 
 
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Write any words you want:");
+
+        String words = sc.nextLine();
+
+        int lengthOfWords = words.length();
+
+        StringBuilder sb = new StringBuilder(words); // I am learning this today from GeeksforGeeks
+
+
+        System.out.println("Length of the string: " + lengthOfWords  + " and Reversed string: " + sb.reverse());
+    }
 }
